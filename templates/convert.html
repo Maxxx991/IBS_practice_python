@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Конвертер арабских чисел в римские</title>
+</head>
+<body>
+    <h1>Конвертер арабских чисел в римские</h1>
+    <form action="/convert" method="post">
+        <label for="number_input">Введите число:</label>
+        <textarea id="number_input" name="number" rows="1" cols="10"></textarea>
+        <button type="submit">Конвертировать</button>
+    </form>
+    {% if roman_number %}
+        <h2>Результат:</h2>
+        <textarea readonly rows="1" cols="10">{{ roman_number }}</textarea>
+    {% endif %}
+</body>
+</html>
